@@ -30,3 +30,5 @@ C:\Users\c0109030\Downloads\TrackingApp_Events_Interface\TrackingApp_Events_Inte
 C:\Users\c0109030\Downloads\TrackingApp_Events_Interface\TrackingApp_Events_Interface\obj\Debug\TrackingApp_Events_Interface.csproj.CoreCompileInputs.cache
 C:\Users\c0109030\Downloads\TrackingApp_Events_Interface\TrackingApp_Events_Interface\obj\Debug\LocatieWindow.g.cs
 C:\Users\c0109030\Downloads\TrackingApp_Events_Interface\TrackingApp_Events_Interface\obj\Debug\LocatieWindow.baml
+Z:\Documents\School\C#\Projects At Home\TrackingApp_Events_Interface\TrackingApp_Events_Interface\obj\Debug\LocatieWindow.g.cs
+Z:\Documents\School\C#\Projects At Home\TrackingApp_Events_Interface\TrackingApp_Events_Interface\obj\Debug\LocatieWindow.baml

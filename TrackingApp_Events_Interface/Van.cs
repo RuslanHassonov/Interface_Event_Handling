@@ -8,14 +8,9 @@ namespace TrackingApp_Events_Interface
 {
     public class Van : Vehicle
     {
-        public Van(string licensePlate)
-        {
-            LicensePlate = licensePlate;
-        }
-
         public override string ToString()
         {
-            return "Van: " + LicensePlate;
+            return "Van: " + TrackId;
         }
     }
 }

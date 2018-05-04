@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TrackingApp_Events_Interface
 {
-    public class LocationEventArgs
+    public class LocationEventArgs : EventArgs
     {
         public string TrackId { get; set; }
         public string Location { get; set; }

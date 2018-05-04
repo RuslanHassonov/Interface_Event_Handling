@@ -5,12 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TrackingApp_Events_Interface"
         mc:Ignorable="d"
-        Title="LocatieWindow" Height="294.915" Width="533.051">
+        Height="294.915" Width="533.051">
     <Grid>
-        <Label Content="Current Location" HorizontalAlignment="Left" Margin="58,170,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="tb_Location" HorizontalAlignment="Left" Height="23" Margin="172,171,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="bt_Submit_Location" Content="Submit" HorizontalAlignment="Left" Margin="353,170,0,0" VerticalAlignment="Top" Width="75"/>
-        <Label x:Name="lb_TrackId" Content="" HorizontalAlignment="Left" Margin="158,75,0,0" VerticalAlignment="Top" Height="33" Width="182"/>
+        <Label Content="Current Location" HorizontalAlignment="Left" Margin="10,170,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tb_Location" HorizontalAlignment="Left" Height="26" Margin="113,170,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="301"/>
+        <Button x:Name="bt_Submit_Location" Content="Submit" HorizontalAlignment="Left" Margin="419,170,0,0" VerticalAlignment="Top" Width="96" Click="bt_Submit_Location_Click" Height="26"/>
+        <Label x:Name="lb_TrackId" Content="" Margin="156,72,0,0" Width="220" Height="50" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="20" HorizontalContentAlignment="Center"/>
 
     </Grid>
 </Window>

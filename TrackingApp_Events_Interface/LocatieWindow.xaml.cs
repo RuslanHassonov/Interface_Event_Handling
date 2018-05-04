@@ -19,11 +19,35 @@ namespace TrackingApp_Events_Interface
     /// </summary>
     public partial class LocatieWindow : Window
     {
+        ILocalisable l;
         public LocatieWindow(ILocalisable localisable)
         {
             InitializeComponent();
-            this.Title = localisable.TrackId;
+            if (localisable is Employee)
+            {
+                this.Title = "Employee: " + localisable.TrackId;
+            }
+            else if (localisable is Car)
+            {
+                this.Title = "Car: " + localisable.TrackId;
+            }
+            else if (localisable is Van)
+            {
+                this.Title = "Van: " + localisable.TrackId;
+            }
             lb_TrackId.Content = localisable.TrackId;
+            l = localisable;
+        }
+
+        private void bt_Submit_Location_Click(object sender, RoutedEventArgs e)
+        {
+            l.SubmitLocation(tb_Location.Text);
+            tb_Location.Clear();
+        }
+
+        public void MainWindowClosedEventHandler(Object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }
