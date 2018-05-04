@@ -1,0 +1,32 @@
+z:\Documents\School\C#\Projects At Home\TrackingApp_Events_Interface\TrackingApp_Events_Interface\bin\Debug\TrackingApp_Events_Interface.exe.config
+z:\Documents\School\C#\Projects At Home\TrackingApp_Events_Interface\TrackingApp_Events_Interface\bin\Debug\TrackingApp_Events_Interface.exe
+z:\Documents\School\C#\Projects At Home\TrackingApp_Events_Interface\TrackingApp_Events_Interface\bin\Debug\TrackingApp_Events_Interface.pdb
+z:\Documents\School\C#\Projects At Home\TrackingApp_Events_Interface\TrackingApp_Events_Interface\obj\Debug\TrackingApp_Events_Interface.csprojResolveAssemblyReference.cache
+z:\Documents\School\C#\Projects At Home\TrackingApp_Events_Interface\TrackingApp_Events_Interface\obj\Debug\MainWindow.g.cs
+z:\Documents\School\C#\Projects At Home\TrackingApp_Events_Interface\TrackingApp_Events_Interface\obj\Debug\App.g.cs
+z:\Documents\School\C#\Projects At Home\TrackingApp_Events_Interface\TrackingApp_Events_Interface\obj\Debug\TrackingApp_Events_Interface_MarkupCompile.cache
+z:\Documents\School\C#\Projects At Home\TrackingApp_Events_Interface\TrackingApp_Events_Interface\obj\Debug\TrackingApp_Events_Interface_MarkupCompile.lref
+z:\Documents\School\C#\Projects At Home\TrackingApp_Events_Interface\TrackingApp_Events_Interface\obj\Debug\MainWindow.baml
+z:\Documents\School\C#\Projects At Home\TrackingApp_Events_Interface\TrackingApp_Events_Interface\obj\Debug\TrackingApp_Events_Interface.g.resources
+z:\Documents\School\C#\Projects At Home\TrackingApp_Events_Interface\TrackingApp_Events_Interface\obj\Debug\TrackingApp_Events_Interface.Properties.Resources.resources
+z:\Documents\School\C#\Projects At Home\TrackingApp_Events_Interface\TrackingApp_Events_Interface\obj\Debug\TrackingApp_Events_Interface.csproj.GenerateResource.cache
+z:\Documents\School\C#\Projects At Home\TrackingApp_Events_Interface\TrackingApp_Events_Interface\obj\Debug\TrackingApp_Events_Interface.csproj.CoreCompileInputs.cache
+z:\Documents\School\C#\Projects At Home\TrackingApp_Events_Interface\TrackingApp_Events_Interface\obj\Debug\TrackingApp_Events_Interface.exe
+z:\Documents\School\C#\Projects At Home\TrackingApp_Events_Interface\TrackingApp_Events_Interface\obj\Debug\TrackingApp_Events_Interface.pdb
+C:\Users\c0109030\Downloads\TrackingApp_Events_Interface\TrackingApp_Events_Interface\obj\Debug\TrackingApp_Events_Interface.csprojResolveAssemblyReference.cache
+C:\Users\c0109030\Downloads\TrackingApp_Events_Interface\TrackingApp_Events_Interface\obj\Debug\MainWindow.g.cs
+C:\Users\c0109030\Downloads\TrackingApp_Events_Interface\TrackingApp_Events_Interface\obj\Debug\App.g.cs
+C:\Users\c0109030\Downloads\TrackingApp_Events_Interface\TrackingApp_Events_Interface\obj\Debug\TrackingApp_Events_Interface_MarkupCompile.cache
+C:\Users\c0109030\Downloads\TrackingApp_Events_Interface\TrackingApp_Events_Interface\obj\Debug\TrackingApp_Events_Interface_MarkupCompile.lref
+C:\Users\c0109030\Downloads\TrackingApp_Events_Interface\TrackingApp_Events_Interface\obj\Debug\TrackingApp_Events_Interface.exe
+C:\Users\c0109030\Downloads\TrackingApp_Events_Interface\TrackingApp_Events_Interface\obj\Debug\TrackingApp_Events_Interface.pdb
+C:\Users\c0109030\Downloads\TrackingApp_Events_Interface\TrackingApp_Events_Interface\bin\Debug\TrackingApp_Events_Interface.exe.config
+C:\Users\c0109030\Downloads\TrackingApp_Events_Interface\TrackingApp_Events_Interface\bin\Debug\TrackingApp_Events_Interface.exe
+C:\Users\c0109030\Downloads\TrackingApp_Events_Interface\TrackingApp_Events_Interface\bin\Debug\TrackingApp_Events_Interface.pdb
+C:\Users\c0109030\Downloads\TrackingApp_Events_Interface\TrackingApp_Events_Interface\obj\Debug\MainWindow.baml
+C:\Users\c0109030\Downloads\TrackingApp_Events_Interface\TrackingApp_Events_Interface\obj\Debug\TrackingApp_Events_Interface.g.resources
+C:\Users\c0109030\Downloads\TrackingApp_Events_Interface\TrackingApp_Events_Interface\obj\Debug\TrackingApp_Events_Interface.Properties.Resources.resources
+C:\Users\c0109030\Downloads\TrackingApp_Events_Interface\TrackingApp_Events_Interface\obj\Debug\TrackingApp_Events_Interface.csproj.GenerateResource.Cache
+C:\Users\c0109030\Downloads\TrackingApp_Events_Interface\TrackingApp_Events_Interface\obj\Debug\TrackingApp_Events_Interface.csproj.CoreCompileInputs.cache
+C:\Users\c0109030\Downloads\TrackingApp_Events_Interface\TrackingApp_Events_Interface\obj\Debug\LocatieWindow.g.cs
+C:\Users\c0109030\Downloads\TrackingApp_Events_Interface\TrackingApp_Events_Interface\obj\Debug\LocatieWindow.baml

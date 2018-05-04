@@ -1,0 +1,16 @@
+﻿<Window x:Class="TrackingApp_Events_Interface.LocatieWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TrackingApp_Events_Interface"
+        mc:Ignorable="d"
+        Title="LocatieWindow" Height="294.915" Width="533.051">
+    <Grid>
+        <Label Content="Current Location" HorizontalAlignment="Left" Margin="58,170,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tb_Location" HorizontalAlignment="Left" Height="23" Margin="172,171,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="bt_Submit_Location" Content="Submit" HorizontalAlignment="Left" Margin="353,170,0,0" VerticalAlignment="Top" Width="75"/>
+        <Label x:Name="lb_TrackId" Content="" HorizontalAlignment="Left" Margin="158,75,0,0" VerticalAlignment="Top" Height="33" Width="182"/>
+
+    </Grid>
+</Window>
