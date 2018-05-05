@@ -10,19 +10,10 @@ namespace TrackingApp_Events_Interface
     {
         public string TrackId { get; set; }
         public string Location { get; set; }
-        public event EventHandler<LocationEventArgs> LocationSubmitted;
 
         public Employee(string name)
         {
             TrackId = name;
-        }
-
-        private void OnLocationSubmitted() => LocationSubmitted?.Invoke(this, new LocationEventArgs(TrackId, Location));
-
-        public void SubmitLocation (string location)
-        {
-            Location = location;
-            OnLocationSubmitted();
         }
 
         public override string ToString()

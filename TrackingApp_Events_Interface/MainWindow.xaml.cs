@@ -20,12 +20,10 @@ namespace TrackingApp_Events_Interface
     /// </summary>
     public partial class MainWindow : Window
     {
-        List<Employee> listEmployees;
         List<Vehicle> listVehicles;
         public MainWindow()
         {
             InitializeComponent();
-            listEmployees = new List<Employee>();
             listVehicles = new List<Vehicle>();
         }
 
@@ -35,20 +33,21 @@ namespace TrackingApp_Events_Interface
             if (tb_Employee_Name.Text != null)
             {
                 Employee employee = new Employee(tb_Employee_Name.Text);
-                listEmployees.Add(employee);
                 lb_Company_Overview.Items.Add(employee.ToString());
                 LocatieWindow w = new LocatieWindow(employee);
                 w.Show();
-                tb_Employee_Name.Clear(); 
+                tb_Employee_Name.Clear();
+                w.LocationSubmitted += LocationSubmittedOccured;
             }
         }
+
         #endregion
         #region Car
         private void bt_Add_Car_Click(object sender, RoutedEventArgs e)
         {
-            try
+            if (tb_License_Plate_Car.Text != null)
             {
-                Vehicle car = new Car();
+                Vehicle car = new Car(tb_License_Plate_Car.Text, null);
                 if (!car.VehicleExists(listVehicles, tb_License_Plate_Car.Text))
                 {
                     listVehicles.Add(car);
@@ -56,28 +55,21 @@ namespace TrackingApp_Events_Interface
                     LocatieWindow w = new LocatieWindow(car);
                     w.Show();
                     tb_License_Plate_Car.Clear();
+                    w.LocationSubmitted += LocationSubmittedOccured;
                 }
                 else
                 {
                     MessageBox.Show("This license plate already exists.");
                 }
             }
-            catch (NullReferenceException)
-            {
-                MessageBox.Show("Please provide a license plate for the car.");
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
         }
         #endregion
         #region Van
         private void bt_Add_Van_Click(object sender, RoutedEventArgs e)
         {
-            try
+            if (tb_License_Plate_Van.Text != null)
             {
-                Vehicle van = new Van();
+                Vehicle van = new Van(tb_License_Plate_Van.Text,null);
                 if (!van.VehicleExists(listVehicles, tb_License_Plate_Van.Text))
                 {
                     listVehicles.Add(van);
@@ -85,17 +77,20 @@ namespace TrackingApp_Events_Interface
                     LocatieWindow w = new LocatieWindow(van);
                     w.Show();
                     tb_License_Plate_Van.Clear();
+                    w.LocationSubmitted += LocationSubmittedOccured;
                 }
                 else
                 {
                     MessageBox.Show("This license plate already exists.");
                 }
             }
-            catch (NullReferenceException)
-            {
-                MessageBox.Show("Please provide a license plate for the van.");
-            }
         }
         #endregion
+
+        public void LocationSubmittedOccured(object sender, LocationEventArgs args)
+        {
+
+        }
+
     }
 }

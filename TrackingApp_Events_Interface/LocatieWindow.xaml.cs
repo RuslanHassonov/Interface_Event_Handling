@@ -19,6 +19,7 @@ namespace TrackingApp_Events_Interface
     /// </summary>
     public partial class LocatieWindow : Window
     {
+        public event EventHandler<LocationEventArgs> LocationSubmitted;
         ILocalisable l;
         public LocatieWindow(ILocalisable localisable)
         {
@@ -39,15 +40,17 @@ namespace TrackingApp_Events_Interface
             l = localisable;
         }
 
-        private void bt_Submit_Location_Click(object sender, RoutedEventArgs e)
+        private void OnLocationSubmitted(LocationEventArgs args)
         {
-            l.SubmitLocation(tb_Location.Text);
-            tb_Location.Clear();
+            LocationSubmitted?.Invoke(this, args);
         }
 
-        public void MainWindowClosedEventHandler(Object sender, EventArgs e)
+        private void bt_Submit_Location_Click(object sender, RoutedEventArgs e)
         {
-            Close();
+            string id = lb_TrackId.Content.ToString();
+            string location = tb_Location.Text;
+            OnLocationSubmitted(new LocationEventArgs(id, location));
+            tb_Location.Clear();
         }
     }
 }

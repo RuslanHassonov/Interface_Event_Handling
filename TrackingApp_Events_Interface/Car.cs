@@ -8,6 +8,11 @@ namespace TrackingApp_Events_Interface
 {
     public class Car : Vehicle
     {
+        public Car(string id, string location)
+        {
+            Location = location;
+            TrackId = id;
+        }
         public override string ToString()
         {
             return "Car: " + TrackId;

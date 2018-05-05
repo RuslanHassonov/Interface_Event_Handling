@@ -10,8 +10,5 @@ namespace TrackingApp_Events_Interface
     {
         string Location { get; set; }
         string TrackId { get; set; }
-        event EventHandler<LocationEventArgs> LocationSubmitted;
-
-        void SubmitLocation(string location);
     }
 }
