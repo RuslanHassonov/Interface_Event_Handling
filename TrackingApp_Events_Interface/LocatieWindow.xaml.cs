@@ -19,11 +19,11 @@ namespace TrackingApp_Events_Interface
     /// </summary>
     public partial class LocatieWindow : Window
     {
-        public event EventHandler<LocationEventArgs> LocationSubmitted;
         ILocalisable l;
         public LocatieWindow(ILocalisable localisable)
         {
             InitializeComponent();
+            #region Title
             if (localisable is Employee)
             {
                 this.Title = "Employee: " + localisable.TrackId;
@@ -36,21 +36,21 @@ namespace TrackingApp_Events_Interface
             {
                 this.Title = "Van: " + localisable.TrackId;
             }
+            #endregion
             lb_TrackId.Content = localisable.TrackId;
             l = localisable;
         }
 
-        private void OnLocationSubmitted(LocationEventArgs args)
-        {
-            LocationSubmitted?.Invoke(this, args);
-        }
-
         private void bt_Submit_Location_Click(object sender, RoutedEventArgs e)
         {
-            string id = lb_TrackId.Content.ToString();
-            string location = tb_Location.Text;
-            OnLocationSubmitted(new LocationEventArgs(id, location));
+            string newLocation = string.Empty;
+            l.LocationSubmit(newLocation = tb_Location.Text);
             tb_Location.Clear();
+        }
+
+        public void MainWindowClosedEventHandler(Object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

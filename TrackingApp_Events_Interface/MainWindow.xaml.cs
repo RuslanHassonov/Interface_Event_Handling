@@ -32,30 +32,36 @@ namespace TrackingApp_Events_Interface
         {
             if (tb_Employee_Name.Text != null)
             {
-                Employee employee = new Employee(tb_Employee_Name.Text);
+                var employee = new Employee(tb_Employee_Name.Text);
                 lb_Company_Overview.Items.Add(employee.ToString());
                 LocatieWindow w = new LocatieWindow(employee);
                 w.Show();
+                employee.LocationSubmitted += (s, args) =>
+                {
+                    lb_Movement_Overview.Items.Add("Employee: " + args.TrackId + " - New Location: " + args.Location);
+                };
                 tb_Employee_Name.Clear();
-                w.LocationSubmitted += LocationSubmittedOccured;
             }
         }
-
         #endregion
         #region Car
         private void bt_Add_Car_Click(object sender, RoutedEventArgs e)
         {
             if (tb_License_Plate_Car.Text != null)
             {
-                Vehicle car = new Car(tb_License_Plate_Car.Text, null);
+                var car = new Car(tb_License_Plate_Car.Text, null);
                 if (!car.VehicleExists(listVehicles, tb_License_Plate_Car.Text))
                 {
                     listVehicles.Add(car);
                     lb_Company_Overview.Items.Add(car.ToString());
                     LocatieWindow w = new LocatieWindow(car);
                     w.Show();
+
+                    car.LocationSubmitted += (s, args) =>
+                    {
+                        lb_Movement_Overview.Items.Add("Car: " + args.TrackId + " - New Location: " + args.Location);
+                    };
                     tb_License_Plate_Car.Clear();
-                    w.LocationSubmitted += LocationSubmittedOccured;
                 }
                 else
                 {
@@ -69,15 +75,19 @@ namespace TrackingApp_Events_Interface
         {
             if (tb_License_Plate_Van.Text != null)
             {
-                Vehicle van = new Van(tb_License_Plate_Van.Text,null);
+                var van = new Van(tb_License_Plate_Van.Text, null);
                 if (!van.VehicleExists(listVehicles, tb_License_Plate_Van.Text))
                 {
                     listVehicles.Add(van);
                     lb_Company_Overview.Items.Add(van.ToString());
                     LocatieWindow w = new LocatieWindow(van);
                     w.Show();
+
+                    van.LocationSubmitted += (s, args) =>
+                    {
+                        lb_Movement_Overview.Items.Add("Van: " + args.TrackId + " - New Location: " + args.Location);
+                    };
                     tb_License_Plate_Van.Clear();
-                    w.LocationSubmitted += LocationSubmittedOccured;
                 }
                 else
                 {
@@ -86,11 +96,5 @@ namespace TrackingApp_Events_Interface
             }
         }
         #endregion
-
-        public void LocationSubmittedOccured(object sender, LocationEventArgs args)
-        {
-
-        }
-
     }
 }

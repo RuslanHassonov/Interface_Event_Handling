@@ -16,6 +16,19 @@ namespace TrackingApp_Events_Interface
             TrackId = name;
         }
 
+        public event EventHandler<LocationEventArgs> LocationSubmitted;
+
+        public void LocationSubmit(string newLocation)
+        {
+            Location = newLocation;
+            OnLocationSubmitted(new LocationEventArgs(TrackId, Location));
+        }
+
+        protected virtual void OnLocationSubmitted(LocationEventArgs args)
+        {
+            LocationSubmitted?.Invoke(this, args);
+        }
+
         public override string ToString()
         {
             return "Employee: " + TrackId;

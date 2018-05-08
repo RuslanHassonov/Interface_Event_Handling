@@ -10,19 +10,18 @@ namespace TrackingApp_Events_Interface
     {
         public string Location { get; set; }
         public string TrackId { get; set; }
+        public event EventHandler<LocationEventArgs> LocationSubmitted;
 
-        //public event EventHandler<LocationEventArgs> LocationSubmitted;
+        public void LocationSubmit(string newLocation)
+        {
+            Location = newLocation;
+            OnLocationSubmitted(new LocationEventArgs(TrackId, Location));
+        }
 
-        //private void OnLocationSubmitted()
-        //{
-        //    LocationSubmitted?.Invoke(this, new LocationEventArgs(TrackId, Location));
-        //}
-
-        //public void SubmitLocation(string location)
-        //{
-        //    Location = location;
-        //    OnLocationSubmitted();
-        //}
+        protected virtual void OnLocationSubmitted(LocationEventArgs args)
+        {
+            LocationSubmitted?.Invoke(this, args);
+        }
 
         public bool VehicleExists (List<Vehicle> vehicles, string plate)
         {
